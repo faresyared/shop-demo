@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tahoma", "Arial", sans-serif;
+  background: #050505;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    radial-gradient(circle at top, #5b430b, #050505 45%);
+  padding: 25px 8%;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.brand img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.nav-btn {
+  color: #050505;
+  background: #d4af37;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-content {
+  max-width: 750px;
+  margin-top: 130px;
+}
+
+.tag {
+  color: #d4af37;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+.desc {
+  margin-top: 25px;
+  font-size: 21px;
+  color: #ddd;
+  max-width: 650px;
+}
+
+.actions {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.gold {
+  background: linear-gradient(135deg, #d4af37, #f7e27c);
+  color: #050505;
+}
+
+.outline {
+  border: 1px solid #d4af37;
+  color: #d4af37;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+section {
+  padding: 80px 8%;
+}
+
+.about {
+  text-align: center;
+  background: #0b0b0b;
+}
+
+.about h2,
+.hours h2,
+.contact h2 {
+  color: #d4af37;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+  color: #ccc;
+  font-size: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  background: #050505;
+}
+
+.card {
+  background: linear-gradient(145deg, #111, #090909);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.08);
+}
+
+.card h3 {
+  color: #d4af37;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #cfcfcf;
+}
+
+.hours {
+  text-align: center;
+  background: #0b0b0b;
+}
+
+.hours-box {
+  max-width: 500px;
+  margin: auto;
+  background: #111;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.hours-box p {
+  font-size: 21px;
+  margin: 10px 0;
+}
+
+.hours-box span {
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.contact-links a {
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  color: #aaa;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .hero-content {
+    margin-top: 90px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .brand span {
+    font-size: 18px;
+  }
+}
