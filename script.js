@@ -1,1 +1,1 @@
-console.log("Gold for Men website loaded successfully.");
+console.log("Gold for Men premium website is ready.");
